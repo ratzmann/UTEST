@@ -1,5 +1,4 @@
 // cronômetro da prova + monitoramento de troca de aba/foco
-// obs: ainda não salva respostas no banco, só finaliza a prova mesmo
 
 (function () {
     const parametros = new URLSearchParams(window.location.search);

@@ -58,12 +58,12 @@ body {
     align-items: center;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 1px;
 }
 
 .profile-name {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #333;
 }
 
@@ -74,14 +74,14 @@ body {
 }
 
 .page-title {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #1a1a1a;
     font-weight: 500;
     margin-bottom: 2px;
 }
 
 .page-subtitle {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #090808;
 }
 
@@ -99,7 +99,7 @@ body {
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
     transition: background-color 0.2s;
@@ -131,14 +131,14 @@ body {
 }
 
 .exam-title {
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: #222222;
     font-weight: 500;
     margin-bottom: 2px;
 }
 
 .exam-meta {
-    font-size: 11px;
+    font-size: 0.6875rem;
     color: #080606;
     display: flex;
     gap: 25px;
@@ -161,7 +161,7 @@ body {
 .action-link {
     text-decoration: none;
     color: #333333;
-    font-size: 15px;
+    font-size: 0.9375rem;
     transition: color 0.2s ease;
 }
 
@@ -177,7 +177,7 @@ body {
     text-align: center;
     color: #888;
     padding: 40px 20px;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .link-danger {

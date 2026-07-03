@@ -37,9 +37,9 @@ const sessao = exigirSessao('PROFESSOR', 'loginProfessor.html');
     function gerarAlternativasPadrao(questaoId) {
     return ['A', 'B', 'C', 'D', 'E'].map(letra => `
         <label class="alternativa-editor">
-            <input class="radio-correta" type="radio" name="correta${questaoId}" value="${letra}">
+            <input class="radio-correta" type="radio" name="correta${questaoId}" value="${letra}" aria-label="Marcar alternativa ${letra} como correta">
             <span class="alt-letra">${letra}</span>
-            <input class="alt-texto" type="text" placeholder="Alternativa ${letra}" data-letra="${letra}">
+            <input class="alt-texto" type="text" placeholder="Alternativa ${letra}" data-letra="${letra}" aria-label="Texto da alternativa ${letra}">
         </label>
     `).join('');
 }
@@ -50,9 +50,9 @@ const sessao = exigirSessao('PROFESSOR', 'loginProfessor.html');
         { letra: 'F', texto: 'Falso' },
     ].map(alt => `
         <label class="alternativa-editor">
-            <input class="radio-correta" type="radio" name="correta${questaoId}" value="${alt.letra}">
+            <input class="radio-correta" type="radio" name="correta${questaoId}" value="${alt.letra}" aria-label="Marcar alternativa ${alt.letra} como correta">
             <span class="alt-letra">${alt.letra}</span>
-            <input class="alt-texto" type="text" value="${alt.texto}" readonly data-letra="${alt.letra}">
+            <input class="alt-texto" type="text" value="${alt.texto}" readonly data-letra="${alt.letra}" aria-label="Texto da alternativa ${alt.letra}">
         </label>
     `).join('');
 }
@@ -92,7 +92,7 @@ const sessao = exigirSessao('PROFESSOR', 'loginProfessor.html');
             <textarea class="enunciado-input" placeholder="Digite o enunciado da questão..." rows="4"></textarea>
 
             <label class="label-campo">Anexo da questão</label>
-            <input type="file" class="anexo-questao" accept="image/*,.pdf">
+            <input type="file" class="anexo-questao" accept="image/*,.pdf" aria-label="Anexar imagem ou PDF para a questão">
 
             <div class="tipo-questao">
                 <label class="tipo-opcao">
@@ -186,7 +186,7 @@ const sessao = exigirSessao('PROFESSOR', 'loginProfessor.html');
         <textarea class="enunciado-input" placeholder="Digite o enunciado da questão..." rows="4">${q.enunciado || ''}</textarea>
 
         <label class="label-campo">Anexo da questão</label>
-        <input type="file" class="anexo-questao" accept="image/*,.pdf">
+        <input type="file" class="anexo-questao" accept="image/*,.pdf" aria-label="Anexar imagem ou PDF para a questão">
 
         ${q.anexo_nome ? `<p class="texto-ajuda">Anexo atual: ${q.anexo_nome}. Envie outro arquivo apenas se quiser substituir.</p>` : ''}
 
@@ -226,9 +226,9 @@ const sessao = exigirSessao('PROFESSOR', 'loginProfessor.html');
     const alternativas = q.alternativas || [];
     altsDiv.innerHTML = alternativas.map(alt => `
         <label class="alternativa-editor">
-            <input class="radio-correta" type="radio" name="correta${qId}" value="${alt.letra}" ${alt.correta ? 'checked' : ''}>
+            <input class="radio-correta" type="radio" name="correta${qId}" value="${alt.letra}" ${alt.correta ? 'checked' : ''} aria-label="Marcar alternativa ${alt.letra} como correta">
             <span class="alt-letra">${alt.letra}</span>
-            <input class="alt-texto" type="text" value="${alt.texto || ''}" data-letra="${alt.letra}" ${q.tipo === 'vf' ? 'readonly' : ''}>
+            <input class="alt-texto" type="text" value="${alt.texto || ''}" data-letra="${alt.letra}" ${q.tipo === 'vf' ? 'readonly' : ''} aria-label="Texto da alternativa ${alt.letra}">
         </label>
     `).join('');
 }

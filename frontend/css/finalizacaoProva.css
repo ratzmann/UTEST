@@ -8,14 +8,14 @@
 }
 
 .finalizacao-card h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
     color: #0b572a;
     margin-bottom: 15px;
 }
 
 .finalizacao-card p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #333;
     line-height: 1.7;
 }

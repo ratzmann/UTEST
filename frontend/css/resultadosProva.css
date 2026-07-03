@@ -1,6 +1,6 @@
 .voltar-link {
     display: inline-block;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #0b572a;
     text-decoration: none;
     margin-bottom: 10px;
@@ -33,13 +33,13 @@
 }
 
 .resumo-valor {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
     color: #1a1a1a;
 }
 
 .resumo-label {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #444;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .aviso-discreto {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
 }
 
@@ -56,7 +56,7 @@
     display: inline-block;
     padding: 4px 12px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
 }
 

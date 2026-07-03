@@ -1,0 +1,60 @@
+/* barra de acessibilidade, fica fixa no topo em todas as páginas */
+.barra-acessibilidade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    padding: 6px 10px;
+    background-color: #1a1a1a;
+}
+
+.barra-acessibilidade button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.barra-acessibilidade button:hover {
+    background-color: #444;
+}
+
+/* empurra o conteúdo pra baixo da barra fixa */
+body {
+    padding-top: 36px;
+}
+
+/* contorno visível ao navegar por teclado (Tab) */
+:focus-visible {
+    outline: 3px solid #ffb300;
+    outline-offset: 2px;
+}
+
+/* modo escuro: inverte as cores da página inteira.
+   as imagens/logo são invertidas de novo pra voltarem ao normal. */
+html[data-tema="escuro"] {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #111;
+}
+
+html[data-tema="escuro"] img,
+html[data-tema="escuro"] .logo,
+html[data-tema="escuro"] .logo-small {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* tamanhos de fonte maiores, escalam tudo que já está em rem */
+html.fonte-media {
+    font-size: 112.5%; /* 18px */
+}
+
+html.fonte-grande {
+    font-size: 125%; /* 20px */
+}
