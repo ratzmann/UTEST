@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Tela de Prova</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/prova.css">
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="logo-container">
+        <img src="../img/logo.png" alt="Logo UTEST" class="logo-small">
+    </div>
+
+    <div class="user-profile">
+        <span class="user-initials" id="iniciaisAluno">--</span>
+        <span class="user-name" id="nomeAluno">Carregando...</span>
+        <button class="btn-logout" onclick="fazerLogout('loginAluno.html')">Sair</button>
+    </div>
+</nav>
+
+<div id="alertaTempo" class="alerta-tempo" style="display:none;"></div>
+
+<main class="container-prova">
+    <section class="prova-header">
+        <div class="prova-title-row">
+            <h2 id="tituloProva">Carregando...</h2>
+
+            <div class="prova-badges">
+                <span class="badge" id="dataProva"></span>
+                <span class="badge timer" id="cronometro">--:--</span>
+                <span class="badge badge-alertas" id="badgeAlertas" style="display:none;">0 alertas registrados</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="questoes-container" id="questoesContainer">
+        <p class="tabela-vazia">Carregando questões...</p>
+    </section>
+</main>
+
+<script src="../js/auth.js"></script>
+<script src="../js/provaTela.js"></script>
+
+</body>
+</html>

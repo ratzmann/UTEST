@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Login Aluno</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginAluno.css">
+</head>
+<body>
+    <main class="container">
+        <div class="brand">
+            <img src="../img/logo.png" alt="Logo UTEST" class="logo">
+            <h1></h1>
+        </div>
+        
+        <div class="login-card">
+            <h2>Olá, aluno!</h2>
+            <p>Informe seus dados para começar a prova</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email institucional</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+
+                <button type="submit" class="btn-submit">Começar</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/loginAluno.js"></script>
+</body>
+</html>

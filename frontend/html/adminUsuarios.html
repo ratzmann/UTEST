@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Administração de Usuários</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/provaProfessor.css">
+    <link rel="stylesheet" href="../css/adminUsuarios.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <img src="../img/logo.png" alt="Logo" class="main-logo">
+            </div>
+            <div class="user-profile">
+                <span class="profile-avatar">AD</span>
+                <span class="profile-name">Administrador</span>
+            </div>
+        </header>
+
+        <section class="page-title-section">
+            <h1 class="page-title">Usuários cadastrados</h1>
+            <p class="page-subtitle">Gerencie os professores e alunos cadastrados na plataforma</p>
+            <p class="admin-aviso">
+                Tela apenas para demonstração: em produção, o acesso será feito via login único (id.udesc).
+            </p>
+        </section>
+
+        <main class="admin-content">
+
+            <section class="admin-secao">
+                <div class="admin-secao-header">
+                    <h3>Professores</h3>
+                    <span id="totalProfessores">0 cadastrados</span>
+                </div>
+                <div class="tabela-wrapper">
+                    <table class="tabela-usuarios">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpoProfessores">
+                            <tr><td colspan="3" class="tabela-vazia">Carregando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="admin-secao">
+                <div class="admin-secao-header">
+                    <h3>Alunos</h3>
+                    <span id="totalAlunos">0 cadastrados</span>
+                </div>
+                <div class="tabela-wrapper">
+                    <table class="tabela-usuarios">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email institucional</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpoAlunos">
+                            <tr><td colspan="3" class="tabela-vazia">Carregando...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+
+        </main>
+    </div>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/adminUsuarios.js"></script>
+
+</body>
+</html>

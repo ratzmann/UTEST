@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Resultados da Prova</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/provaProfessor.css">
+    <link rel="stylesheet" href="../css/resultadosProva.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Logo" class="main-logo">
+        </div>
+
+        <div class="user-profile">
+            <span class="profile-avatar">--</span>
+            <span class="profile-name">Carregando...</span>
+            <button class="btn-logout" onclick="fazerLogout('loginProfessor.html')">Sair</button>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <a href="provaProfessor.html" class="voltar-link">&larr; Voltar para minhas provas</a>
+        <h1 class="page-title" id="tituloProva">Resultados da prova</h1>
+        <p class="page-subtitle">Acompanhe o desempenho e a integridade da aplicação em tempo real</p>
+    </section>
+
+    <main class="resultados-content">
+        <section class="resumo-cards">
+            <div class="resumo-card">
+                <span class="resumo-valor" id="resumoTotal">-</span>
+                <span class="resumo-label">Alunos</span>
+            </div>
+
+            <div class="resumo-card">
+                <span class="resumo-valor" id="resumoConcluidas">-</span>
+                <span class="resumo-label">Provas concluídas</span>
+            </div>
+
+            <div class="resumo-card">
+                <span class="resumo-valor" id="resumoMedia">-</span>
+                <span class="resumo-label">Média da turma</span>
+            </div>
+
+            <div class="resumo-card resumo-card-alerta">
+                <span class="resumo-valor" id="resumoAlertas">-</span>
+                <span class="resumo-label">Alertas anti-fraude</span>
+            </div>
+        </section>
+
+        <section class="admin-secao">
+            <div class="admin-secao-header">
+                <h3>Desempenho por aluno</h3>
+                <span id="avisoMonitoramento" class="aviso-discreto" style="display:none;"></span>
+            </div>
+
+            <div class="tabela-wrapper">
+                <table class="tabela-usuarios tabela-resultados">
+                    <thead>
+                        <tr>
+                            <th>Aluno</th>
+                            <th>Status</th>
+                            <th>Nota</th>
+                            <th>Tempo utilizado</th>
+                            <th>Alertas de foco</th>
+                            <th>Respostas</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="corpoResultados">
+                        <tr><td colspan="5" class="tabela-vazia">Carregando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/resultadosProva.js"></script>
+
+</body>
+</html>

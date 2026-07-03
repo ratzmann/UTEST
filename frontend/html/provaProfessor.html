@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Tela de Prova do Professor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/provaProfessor.css">
+</head>
+<body>
+
+<div class="dashboard-container">
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../img/logo.png" alt="Logo" class="main-logo">
+        </div>
+
+        <div class="user-profile">
+            <span class="profile-avatar" id="iniciaisProfessor">--</span>
+            <span class="profile-name" id="nomeProfessor">Carregando...</span>
+            <button class="btn-logout" onclick="fazerLogout('loginProfessor.html')">Sair</button>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="page-title-row">
+            <div>
+                <h1 class="page-title">Minhas provas</h1>
+                <p class="page-subtitle">Gerencie e acompanhe suas avaliações</p>
+            </div>
+
+            <a href="cadastroProva.html" class="btn-nova-prova">+ Nova prova</a>
+        </div>
+    </section>
+
+    <main class="exam-list" id="listaProvas">
+        <p class="tabela-vazia">Carregando provas...</p>
+    </main>
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/provaProfessor.js"></script>
+
+</body>
+</html>

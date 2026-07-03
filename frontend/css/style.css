@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.brand h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.mensagem-erro {
+    color: #c0392b;
+    background-color: #fdecea;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.mensagem-sucesso {
+    color: #0b572a;
+    background-color: #eafaf0;
+    border: 1px solid #b7e4c7;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.link-secundario {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #333;
+}
+
+.link-secundario a {
+    color: #0b572a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-secundario a:hover {
+    text-decoration: underline;
+}
+
+.btn-logout {
+    border: none;
+    background: #fff;
+    color: #0b572a;
+    border-radius: 16px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-logout:hover {
+    background: #f1f1f1;
+}

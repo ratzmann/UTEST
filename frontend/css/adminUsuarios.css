@@ -1,0 +1,102 @@
+.admin-aviso {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #8a6d00;
+    background-color: #fff8e1;
+    border: 1px solid #ffe08a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.admin-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 60px 60px;
+}
+
+.admin-secao {
+    background-color: #ebebeb;
+    border-radius: 12px;
+    padding: 20px 25px;
+}
+
+.admin-secao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.admin-secao-header h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.admin-secao-header span {
+    font-size: 13px;
+    color: #333;
+}
+
+.tabela-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+.tabela-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-usuarios th {
+    text-align: left;
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabela-usuarios td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #222;
+    border-bottom: 1px solid #efefef;
+}
+
+.tabela-usuarios tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-vazia {
+    text-align: center;
+    color: #888;
+    padding: 20px !important;
+}
+
+.btn-excluir {
+    background-color: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.2s;
+}
+
+.btn-excluir:hover {
+    background-color: #f8d7da;
+}
+
+.btn-excluir:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

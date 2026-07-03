@@ -1,0 +1,85 @@
+.voltar-link {
+    display: inline-block;
+    font-size: 13px;
+    color: #0b572a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.voltar-link:hover {
+    text-decoration: underline;
+}
+
+.resultados-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 60px 60px;
+}
+
+.resumo-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.resumo-card {
+    background-color: #ebebeb;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.resumo-valor {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.resumo-label {
+    font-size: 12px;
+    color: #444;
+}
+
+.resumo-card-alerta .resumo-valor {
+    color: #c0392b;
+}
+
+.aviso-discreto {
+    font-size: 12px;
+    color: #888;
+}
+
+.status-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-concluida {
+    background-color: #eafaf0;
+    color: #0b572a;
+}
+
+.status-andamento {
+    background-color: #fff8e1;
+    color: #8a6d00;
+}
+
+.alerta-contagem {
+    font-weight: 600;
+}
+
+.alerta-contagem.tem-alerta {
+    color: #c0392b;
+}
+
+@media (max-width: 720px) {
+    .resumo-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

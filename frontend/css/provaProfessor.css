@@ -1,0 +1,199 @@
+body {
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.dashboard-container {
+    width: 100%;
+    max-width: 100%; 
+    background-color: #f8f9fa;
+    min-height: 100vh; 
+    padding: 0; 
+    box-shadow: none; 
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+    width: 100%; 
+
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo {
+    height: 100px;       
+    width: auto;        
+    object-fit: contain;
+}
+
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 6px 20px 6px 6px;
+    border-radius: 30px;
+    gap: 12px;
+}
+
+.profile-avatar {
+    background-color: #0b572a;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.profile-name {
+    font-size: 18px;
+    color: #333;
+}
+
+/* título */
+.page-title-section {
+    padding: 0 60px;
+    margin-bottom: 25px;
+}
+
+.page-title {
+    font-size: 28px;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.page-subtitle {
+    font-size: 13px;
+    color: #090808;
+}
+
+.page-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-nova-prova {
+    background-color: #0b572a;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.btn-nova-prova:hover {
+    background-color: #08401e;
+}
+
+/* cards de prova */
+.exam-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 60px;
+}
+
+.exam-card {
+    background-color: #ebebeb;
+    border-radius: 12px;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* infos do card */
+.exam-header {
+    margin-bottom: 12px;
+}
+
+.exam-title {
+    font-size: 17px;
+    color: #222222;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.exam-meta {
+    font-size: 11px;
+    color: #080606;
+    display: flex;
+    gap: 25px;
+}
+
+/* ações do card */
+.exam-actions {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.action-link {
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.action-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.link-copy {
+    color: #444444;
+}
+.tabela-vazia {
+    text-align: center;
+    color: #888;
+    padding: 40px 20px;
+    font-size: 15px;
+}
+
+.link-danger {
+    color: #c0392b !important;
+    border-color: #c0392b !important;
+}
+
+.link-danger:hover {
+    background-color: #c0392b !important;
+    color: #fff !important;
+}
+
+button.action-link {
+    background: none;
+    border: 1px solid #0b572a;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}

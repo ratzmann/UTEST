@@ -1,0 +1,21 @@
+.finalizacao-card {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.finalizacao-card h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #0b572a;
+    margin-bottom: 15px;
+}
+
+.finalizacao-card p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.7;
+}

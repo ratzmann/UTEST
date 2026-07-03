@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Acesso Administrativo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginProfessor.css">
+</head>
+<body>
+    <main class="container">
+        <div class="brand">
+            <img src="../img/logo.png" alt="Logo UTEST" class="logo">
+            <h1></h1>
+        </div>
+
+        <div class="login-card">
+            <h2>Área administrativa</h2>
+            <p>Acesso restrito para gestão dos usuários cadastrados</p>
+
+            <form id="adminLoginForm">
+                <div class="input-group">
+                    <label for="chaveAdmin">Chave de acesso</label>
+                    <input type="password" id="chaveAdmin" name="chaveAdmin" required autocomplete="off">
+                </div>
+
+                <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+
+                <button type="submit" class="btn-submit">Entrar</button>
+            </form>
+
+            <p class="link-secundario">
+                <a href="loginProfessor.html">Voltar</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/adminLogin.js"></script>
+</body>
+</html>

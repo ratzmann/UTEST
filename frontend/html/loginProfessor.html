@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Login Professor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginProfessor.css">
+</head>
+<body>
+    <main class="container">
+        <div class="brand">
+            <img src="../img/logo.png" alt="Logo UTEST" class="logo">
+            <h1></h1>
+        </div>
+        
+        <div class="login-card">
+            <h2>Olá, professor!</h2>
+            <p>Informe seus dados para fazer log-in</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+
+                <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+
+                <button type="submit" class="btn-submit">Entrar</button>
+            </form>
+
+            <p class="link-secundario">
+                Ainda não tem conta? <a href="cadastroProfessor.html">Cadastre-se</a>
+            </p>
+            <p class="link-secundario">
+                <a href="adminLogin.html">Acesso administrativo</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/loginProfessor.js"></script>
+</body>
+</html>

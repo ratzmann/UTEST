@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Cadastro Professor</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginProfessor.css">
+</head>
+<body>
+    <main class="container">
+        <div class="brand">
+            <img src="../img/logo.png" alt="Logo UTEST" class="logo">
+            <h1></h1>
+        </div>
+
+        <div class="login-card">
+            <h2>Cadastro de professor</h2>
+            <p>Crie sua conta para gerenciar provas</p>
+
+            <form id="cadastroForm">
+                <div class="input-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" minlength="8" required>
+
+                    <label for="confirmarSenha">Confirmar senha</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" minlength="8" required>
+                </div>
+
+                <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+                <p id="mensagemSucesso" class="mensagem-sucesso" style="display:none;"></p>
+
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+
+            <p class="link-secundario">
+                Já tem conta? <a href="loginProfessor.html">Fazer login</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/cadastroProfessor.js"></script>
+</body>
+</html>

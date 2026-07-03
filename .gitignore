@@ -1,0 +1,26 @@
+# Segredos / configuracao local
+.env
+.env.local
+.env.*.local
+
+# Dependencias Node
+backend/node_modules/
+frontend/node_modules/
+node_modules/
+
+# Logs
+npm-debug.log*
+*.log
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Dados do Postgres (se rodar fora do Docker)
+backend/data/
+*.sqlite

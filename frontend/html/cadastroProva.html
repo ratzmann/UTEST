@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTEST - Cadastro de Prova</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastroProva.css">
+</head>
+<body>
+
+<nav class="top-nav">
+    <div class="logo-container">
+        <img src="../img/logo.png" alt="Logo UTEST" class="logo-small">
+    </div>
+    <div class="user-profile">
+        <span class="user-initials" id="iniciaisNav">--</span>
+        <span class="user-name" id="nomeNav">Carregando...</span>
+        <button class="btn-logout" onclick="fazerLogout('loginProfessor.html')">Sair</button>
+    </div>
+</nav>
+
+<main class="container-cadastro">
+    <aside class="page-sidebar">
+        <h2>Nova prova</h2>
+        <p>Configure sua avaliação</p>
+    </aside>
+
+    <div class="page-content">
+        <section class="info-card">
+            <h3>Informações da prova</h3>
+
+            <div class="field-group">
+                <label for="nomeProva">Nome da prova</label>
+                <input type="text" id="nomeProva" placeholder="Ex: Prova 1 Algoritmos">
+            </div>
+
+            <div class="info-row">
+                <div class="field-group">
+                    <label for="duracao">Duração (minutos)</label>
+                    <input type="number" id="duracao" placeholder="Ex: 60" min="1">
+                </div>
+
+                <div class="field-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data">
+                </div>
+            </div>
+        </section>
+
+        <section class="questoes-section">
+            <div class="questoes-header">
+                <h3>Questões</h3>
+                <span id="totalQuestoes">Total de questões: 01</span>
+            </div>
+
+            <div id="listaQuestoes"></div>
+
+            <div class="btn-add-wrapper">
+                <button class="btn-add" onclick="adicionarQuestao()">+</button>
+            </div>
+        </section>
+
+        <p id="mensagemErro" class="mensagem-erro" style="display:none;"></p>
+        <p id="mensagemSucesso" class="mensagem-sucesso" style="display:none;"></p>
+
+        <div class="acoes-cadastro">
+            <button class="btn-submit" onclick="salvarProva()">Finalizar Prova</button>
+        </div>
+    </div>
+</main>
+
+<script src="../js/auth.js"></script>
+<script src="../js/cadastroProva.js"></script>
+
+</body>
+</html>
