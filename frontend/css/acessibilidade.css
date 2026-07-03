@@ -41,11 +41,8 @@ body {
     outline-offset: 2px;
 }
 
-/* modo escuro: inverte as cores da página inteira.
-   as imagens/logo são invertidas de novo pra voltarem ao normal.
-   obs: não força background-color aqui -- o filtro já inverte o
-   branco padrão do body pra escuro sozinho; forçar um fundo escuro
-   aqui faria ele virar CLARO depois de invertido. */
+/* modo escuro: inverte as cores da página inteira.*/
+
 html[data-tema="escuro"] {
     filter: invert(1) hue-rotate(180deg);
 }
