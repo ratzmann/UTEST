@@ -1,4 +1,8 @@
 /* barra de acessibilidade, fica fixa no topo em todas as páginas */
+:root {
+    --altura-barra-acessibilidade: 38px;
+}
+
 .barra-acessibilidade {
     position: fixed;
     top: 0;
@@ -28,7 +32,7 @@
 
 /* empurra o conteúdo pra baixo da barra fixa */
 body {
-    padding-top: 36px;
+    padding-top: var(--altura-barra-acessibilidade);
 }
 
 /* contorno visível ao navegar por teclado (Tab) */
@@ -38,10 +42,12 @@ body {
 }
 
 /* modo escuro: inverte as cores da página inteira.
-   as imagens/logo são invertidas de novo pra voltarem ao normal. */
+   as imagens/logo são invertidas de novo pra voltarem ao normal.
+   obs: não força background-color aqui -- o filtro já inverte o
+   branco padrão do body pra escuro sozinho; forçar um fundo escuro
+   aqui faria ele virar CLARO depois de invertido. */
 html[data-tema="escuro"] {
     filter: invert(1) hue-rotate(180deg);
-    background-color: #111;
 }
 
 html[data-tema="escuro"] img,

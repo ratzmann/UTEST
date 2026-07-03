@@ -213,7 +213,7 @@ body {
 
 .alerta-tempo {
     position: fixed;
-    top: 20px;
+    top: calc(var(--altura-barra-acessibilidade, 0px) + 20px);
     left: 50%;
     transform: translateX(-50%);
     background-color: #c0392b;
